@@ -14,13 +14,13 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-  
+
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
@@ -32,3 +32,12 @@ $(document).ready(function(){
     });
   });
 })
+
+$(function () {
+      $('.SendEmail').click(function (event) {
+        var email = 'chjlarson@gmail.com';
+        var subject = 'Hello!';
+        var emailBody = 'Hello! I have been looking through your website and projects. I am impressed with what you have done and I am interested in your skills!';
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+      });
+    });
