@@ -1,6 +1,6 @@
 $(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+  $(".navbar a, footer a[href='#myPage'], .toFooter a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -36,8 +36,9 @@ $(document).ready(function(){
 $(function () {
       $('.SendEmail').click(function (event) {
         var email = 'chjlarson@gmail.com';
-        var subject = 'Hello!';
-        var emailBody = 'Hello! I have been looking through your website and projects. I am impressed with what you have done and I am interested in your skills!';
-        document.location = "mailto:"+email+"?subject="+subject+"&body="+emailBody;
+        var subject = 'Hello';
+        var name = document.getElementById('name').value;
+        var emailBody = document.getElementById('comments').value;
+        document.location = "mailto:"+email+"?subject="+subject+"&body="+"Hello, my name is "+name+". "+emailBody;
       });
     });
