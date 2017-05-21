@@ -214,6 +214,10 @@
       -webkit-animation-duration: 1s;
       visibility: visible;
   }
+  .mobile-info {
+      visibility: hidden;
+      display: none;
+  }
   @keyframes slide {
     0% {
       opacity: 0;
@@ -235,7 +239,7 @@
     }
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1050px) {
     .col-sm-4 {
       text-align: center;
       margin: 25px 0;
@@ -244,7 +248,30 @@
         width: 100%;
         margin-bottom: 35px;
     }
+    .skill-heading {
+      font-size: 20px;
+    }
+    .panel-heading {
+      padding: 5px;
+    }
   }
+
+  @media screen and (max-width: 770px) {
+    .desktop-info {
+        visibility: hidden;
+        display: none;
+    }
+
+  @media screen and (max-width: 770px) {
+    .mobile-info {
+      visibility: visible;
+      display:block;
+    }
+    .overlay {
+      visibility: hidden;
+    }
+  }
+
   @media screen and (max-width: 480px) {
     .logo {
         font-size: 150px;

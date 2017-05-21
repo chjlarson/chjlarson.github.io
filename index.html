@@ -5,10 +5,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="http://code.jquery.com/jquery-latest.js"></script>
-  <script src="scripts.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -51,7 +47,7 @@
       <h4>Software Development, Web Development, Robotics, AI, Deep Learning & Continuous Improvement!</h4>
       <p style="text-indent: 3em;">My name is Christopher Larson. I spend my time researching new technologies and learning new skills. I work on a variety of different projects ranging from small quick-install bash scripts to websites and programming Artificial Intelligence. I love building and setting up computers and robots. I have had over 5 years of experience planning, designing, programming, and testing projects in both individual and team settings. I am passionate about what I do and I never settle with what I know. I am not limited to recreating what I have seen, I am innovative, analytical, and strategic inorder to create something that is efficient, effective, and understandable.</p>
       <div class="toFooter">
-        <a href="#footer" title="To Bottom">
+        <a href="#contact" title="To Bottom">
         <br><button class="btn btn-default btn-lg">Get in Touch</button></a>
       </div>
     </div>
@@ -114,7 +110,7 @@
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Languages</h1>
+          <h1 class="skill-heading">Languages</h1>
         </div>
         <div class="panel-body2">
           <table>
@@ -145,7 +141,7 @@
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading">
-          <h1>Databases</h1>
+          <h1 class="skill-heading">Databases</h1>
         </div>
         <div class="panel-body2">
           <p>SQL</p>
@@ -158,7 +154,7 @@
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading2">
-          <h1>Operating Systems</h1>
+          <h1 class="skill-heading">Operating Systems</h1>
         </div>
         <div class="panel-body">
           <p>Linux</p>
@@ -173,7 +169,7 @@
     <div class="col-sm-3 col-xs-12">
       <div class="panel panel-default text-center">
         <div class="panel-heading2">
-          <h1>Hardware Platforms</h1>
+          <h1 class="skill-heading">Hardware Platforms</h1>
         </div>
         <div class="panel-body2">
           <p>ARM</p>
@@ -198,9 +194,17 @@
         <h4>Collision-Avoiding Remote-Controlled Car</h4>
         <div class="overlay">
           <div style="padding-top: 40px;">
-            <button type="button" class="ghost-button" data-toggle="collapse" data-target="#demo">
+            <button type="button" class="ghost-button" data-toggle="collapse" data-target="#CARCC-row">
               <span class="glyphicon glyphicon-collapse-down"></span> More Info
             </button>
+          </div>
+        </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#CARCC">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="CARCC" class="collapse">
+            -	Project Scope: Created a robotic device that utilized a single-board computer embedded into a motor vehicle to allow a user control of the vehicle through the use of a multiple different input devices. These include a website, a bluetooth controller, a radio controller, and over a wireless network. The vehicle drove autonomously though the use of object recognition that utilized a camera and multiple different sensors to gather surrounding environmental data.
           </div>
         </div>
       </div>
@@ -214,6 +218,16 @@
             </button>
           </div>
         </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#demo4">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="demo4" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
       </div>
       <div class="col-sm-4 overlay-container ">
         <span class="glyphicon glyphicon-lock logo-small"></span>
@@ -225,12 +239,26 @@
             </button>
           </div>
         </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#demo5">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="demo5" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
       </div>
-      <div id="demo" class="collapse">
+      </div>
+      <p></p>
+      <div id="CARCC-row" class="collapse desktop-info">
+        -	Collision-Avoiding Remote-Controlled Car: Created a robotic device that utilized a single-board computer embedded into a motor vehicle to allow a user control of the vehicle through the use of a multiple different input devices. These include a website, a bluetooth controller, a radio controller, and over a wireless network. The vehicle drove autonomously though the use of object recognition that utilized a camera and multiple different sensors to gather surrounding environmental data.
+      </div>
+      <div id="demo" class="collapse desktop-info">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
       </div>
       <br><br>
     <div class="row">
@@ -244,6 +272,16 @@
             </button>
           </div>
         </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#demo6">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="demo6" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
       </div>
       <div class="col-sm-4 overlay-container ">
         <span class="glyphicon glyphicon-certificate logo-small"></span>
@@ -253,6 +291,16 @@
             <button type="button" class="ghost-button" data-toggle="collapse" data-target="#demo2">
               <span class="glyphicon glyphicon-collapse-down"></span> More Info
             </button>
+          </div>
+        </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#demo7">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="demo7" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </div>
         </div>
       </div>
@@ -266,12 +314,23 @@
             </button>
           </div>
         </div>
+        <div class="mobile-info">
+          <button type="button" class="btn" data-toggle="collapse" data-target="#demo8">
+            <span class="glyphicon glyphicon-collapse-down"></span> More Info
+          </button>
+          <div id="demo8" class="collapse">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </div>
+        </div>
       </div>
-      <div id="demo2" class="collapse">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </div>
+    </div>
+    <p></p>
+    <div id="demo2" class="collapse desktop-info">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </div>
 
 
@@ -368,4 +427,9 @@
   </a>
 </footer>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="scripts.js"></script>
 </html>
